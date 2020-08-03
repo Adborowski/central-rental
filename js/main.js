@@ -1,8 +1,5 @@
 console.log("[main.js]");
 
-alert(`Zgodnie z Rozporządzeniem Rady Ministrów z 31 marca 2020 r.  pobyt w naszym apartamencie w okresie 1-11.04.2020 może być zrealizowany jedynie w związku z wykonywaniem przez Gościa czynności zawodowych lub w celu odbycia kwarantanny jak również przez osoby wykonujące zawód medyczny.`);
-
-
 $(".navButton").on("click", function(){
     console.log(this);
     var target = this.getAttribute("data-target");

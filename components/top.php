@@ -24,20 +24,17 @@
     <script src="js/map.js"></script>
     <script src="http://widgetredirect.rooms-wizard.com/static/scripts/widget.js"></script>
 
+ <!-- Global site tag (gtag.js) - Google Ads: 745944823 --> <script async src="https://www.googletagmanager.com/gtag/js?id=AW-745944823"></script> 
+ 
+ <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-745944823'); </script>
 
-    <!-- Facebook Pixel Code -->
-    <script>
-        !function(f,b,e,v,n,t,s)
-        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-        n.queue=[];t=b.createElement(e);t.async=!0;
-        t.src=v;s=b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s)}(window,document,'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '2745637838783957'); 
-        fbq('track', 'PageView');
-    </script>
+<!-- Event snippet for Zakup conversion page In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. --> <script> function gtag_report_conversion(url) { var callback = function () { if (typeof(url) != 'undefined') { window.location = url; } }; gtag('event', 'conversion', { 'send_to': 'AW-745944823/aajcCI7MgNIBEPft2OMC', 'value': 200.0, 'currency': 'PLN', 'transaction_id': '', 'event_callback': callback }); return false; } </script>
+
+<!-- Event snippet for CR Konwersja 1 conversion page -->
+<script>
+  gtag('event', 'conversion', {'send_to': 'AW-745944823/x4ejCJic1dMBEPft2OMC'});
+</script>
+
 
 <script src="https://client8134.idosell.com/widget/script/loadScriptsForOwnPage?1576501743"></script><script src="https://client8134.idosell.com/template/widget/js/widget_booking.js?1576501743"></script>
 

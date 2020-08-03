@@ -11,6 +11,7 @@
     <div class="navButton" data-target="map">Mapa</div>
     <div class="navButton" data-target="contact">Kontakt</div>
     <div class="navButton" data-target="rules">Regulamin</div>
+    <div class="navButton" data-target="rezerwacje">Rezerwacje</div>
 
     <div id="boxNavExtras">
 
@@ -55,6 +56,7 @@
         <div class="navButton" data-target="map">Mapa</div>
         <div class="navButton" data-target="contact">Kontakt</div>
         <div class="navButton" data-target="rules">Regulamin</div>
+        <div class="navButton" data-target="rezerwacje">Rezerwacje</div>
 
         <!-- <div class="navMobileFooter">
             <div class="footerItem">
