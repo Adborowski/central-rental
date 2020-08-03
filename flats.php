@@ -10,65 +10,23 @@ fbq('track', 'ViewContent');
 include "components/navigation.php";
 ?>
 
+<?php
+
+if ($_GET["flat_id"])
+  var_dump($_GET);
+
+  echo "<div id='marker-modal' data-flat-id='".$_GET["flat_id"]."'></div>"
+  
+?>
+
+
+<script defer src="js/flats.js"></script>
+
 <div id="boxBackground"></div>
 
 <div id="boxMain">
 
     <div id="boxFlatCards">
-
-        <!-- <div class="cardFlat" data-flat-id="1">
-
-            <div class="boxFlatPhoto">
-                <img src="images/photo1.jpg">
-            </div>
-
-            <div class="boxFlatInfo">
-                <div class="boxFlatTitle">Sienkiewicza 1</div>
-                <div class="boxFlatDescription">Urokliwe mieszkanie dla dwojga studentów bądź pary. Widok na park i cicha okolica gwarantują spokój i duzo światła.</div>
-                
-            </div>
-
-            <div class="boxFlatButtons">
-                    <div class="boxFlatButton modalTrigger">Więcej</div>
-            </div>
-
-        </div> 
-
-        <div class="cardFlat" data-flat-id="2">
-
-            <div class="boxFlatPhoto">
-                <img src="images/photo1.jpg">
-            </div>
-
-            <div class="boxFlatInfo">
-                <div class="boxFlatTitle">Sienkiewicza 1</div>
-                <div class="boxFlatDescription">Urokliwe mieszkanie dla dwojga studentów bądź pary. Widok na park i cicha okolica gwarantują spokój i duzo światła.</div>
-                
-            </div>
-
-            <div class="boxFlatButtons">
-                    <div class="boxFlatButton modalTrigger">Więcej</div>
-            </div>
-
-        </div> 
-
-        <div class="cardFlat" data-flat-id="3">
-
-            <div class="boxFlatPhoto">
-                <img src="images/photo1.jpg">
-            </div>
-
-            <div class="boxFlatInfo">
-                <div class="boxFlatTitle">Sienkiewicza 1</div>
-                <div class="boxFlatDescription">Urokliwe mieszkanie dla dwojga studentów bądź pary. Widok na park i cicha okolica gwarantują spokój i duzo światła.</div>
-                
-            </div>
-
-            <div class="boxFlatButtons">
-                    <div class="boxFlatButton modalTrigger">Więcej</div>
-            </div>
-
-        </div> -->
 
     </div> <!-- end of #boxFlatCards -->
 

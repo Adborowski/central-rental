@@ -3,7 +3,6 @@ console.log("[flats.js]");
 $(".modalTrigger").on("click",function(e){
     
     var activeFlatCardId = $(this).parent().parent().attr("data-flat-id");
-    openModal(activeFlatCardId);
 
     $(".boxModalImage").on("click", function(){
 
@@ -16,7 +15,9 @@ $(".modalTrigger").on("click",function(e){
 });
 
 $(".modalKiller").on("click", function(e){
-    killModal();
+    // killModal();
+    window.location.href = "http://www.centralrental.pl/flats";
+    
 });
 
 $(".photoModalKiller").on("click", function(e){
@@ -69,8 +70,17 @@ showFlatCards();
 // this will give the card flats the power to open modal on click
 // previously just the MORE button could do that
 $(".cardFlat").on("click", function(e){
+
     var flatId = $(this).attr("data-flat-id");
     openModal(flatId);
+
+    let newUrl = " ";
+    newUrl = window.location.href.toString();
+    newUrl = newUrl+'?flat_id='+flatId;
+    console.log("BITCH "+newUrl);
+    window.location.href = newUrl;
+    // window.location.href = window.location.href+'?flat_id='+flatId;
+
 });
 
 var boxModal = $("#boxModal");
@@ -83,6 +93,8 @@ function freezeBodyScrolling(){
 function unfreezeBodyScrolling(){
     $("body").removeClass("noScroll");
 }
+
+$("#marker-modal").attr("data-flat-id")?openModal($("#marker-modal").attr("data-flat-id")):console.log("nope");
 
 function openModal(flatId){
 

@@ -20,7 +20,6 @@
 
     <script defer src="js/main.js"></script>
     <script src="js/flats_list.js"></script>
-    <script defer src="js/flats.js"></script>
     <script src="js/map.js"></script>
     <script src="http://widgetredirect.rooms-wizard.com/static/scripts/widget.js"></script>
 
