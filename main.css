@@ -216,6 +216,26 @@ body.noScroll {
   margin-left: 30px;
 }
 
+#banner-bon {
+  background-color: #E1643A;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 90px;
+}
+@media screen and (min-width: 1000px) {
+  #banner-bon {
+    margin-top: 0px;
+  }
+}
+#banner-bon span {
+  text-align: center;
+  color: white;
+  font-weight: 400;
+  font-size: 24px;
+}
+
 .boxTitle {
   font-family: roboto, sans-serif;
   width: 100%;

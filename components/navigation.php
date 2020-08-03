@@ -71,3 +71,7 @@
     </div>
 
 </div>
+
+<div id="banner-bon">
+    <span>U nas zrealizujesz bon turystyczny</span>
+</div>
