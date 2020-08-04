@@ -72,7 +72,7 @@ showFlatCards();
 $(".cardFlat").on("click", function(e){
 
     var flatId = $(this).attr("data-flat-id");
-    openModal(flatId);
+    // openModal(flatId);
 
     let newUrl = " ";
     newUrl = window.location.href.toString();

@@ -12,8 +12,7 @@ include "components/navigation.php";
 
 <?php
 
-if ($_GET["flat_id"])
-  var_dump($_GET);
+if (!empty($_GET["flat_id"]))
 
   echo "<div id='marker-modal' data-flat-id='".$_GET["flat_id"]."'></div>"
   
