@@ -46,10 +46,6 @@ include "components/navigation.php";
     </div>
 </div>
 
-
-
-
-
 <?php
 include "components/bottom.php";
 ?>
