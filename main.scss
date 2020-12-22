@@ -43,7 +43,7 @@ body.noScroll{
     display: none;
 
     #boxNavExtras{
-        position: absolute;
+        // position: absolute;
         top: 0;
         right: 20px;
         height: $navBarHeight;
@@ -299,7 +299,7 @@ $burgerButtonMargin: 0px;
     justify-content: center;
     margin-top: 90px;
 
-    @media screen and (min-width: 1000px){
+    @media screen and (min-width: 992px){
         margin-top: 0px;
     }
 
@@ -785,6 +785,7 @@ $flatCardHeight: 390px;
 
             .boxModalButton{
                 background-color: blueviolet;
+                line-height: 17px;
                 color: white;
                 cursor: pointer;
                 width: 80%;

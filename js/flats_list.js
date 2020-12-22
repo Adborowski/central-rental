@@ -211,7 +211,7 @@ var jFlats = [
 {
     flat_id: 9,
     flat_name: 'Apartament "Centrum"',
-    object_code: 12,
+    object_code: 18,
     number_of_photos: 39,
     address:"ul. Lipowa 18/49",
     // 53.1355053,23.1560445

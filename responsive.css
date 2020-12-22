@@ -246,7 +246,6 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-right: 120px;
   }
 
   #navBar #boxNavExtras .boxNavExtra .btnFacebook {
@@ -263,7 +262,6 @@
   }
 
   #boxLogo {
-    position: absolute;
     top: 0;
     left: 0;
   }
