@@ -8,7 +8,7 @@ include "components/navigation.php";
 
 <div id="mainRules">
 
-        <embed id="rules" width="500" height="1000" src="docs/regulamin4.pdf" type="application/pdf"/>
+        <object id="rules" width="300" data="docs/regulamin4.pdf" type="application/pdf"></object>
 
 </div>
 
