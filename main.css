@@ -1,0 +1,833 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: roboto, sans-serif;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+body {
+  background-color: #226622;
+  position: relative;
+}
+body ::-webkit-scrollbar {
+  display: none !important;
+}
+
+body.noScroll {
+  position: fixed;
+  overflow: hidden;
+}
+
+#navBar a {
+  color: black !important;
+}
+
+#navBar {
+  width: 100%;
+  height: 70px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  background-color: white;
+  padding-left: 15px;
+  display: none;
+}
+#navBar #boxNavExtras {
+  top: 0;
+  right: 20px;
+  height: 70px;
+  width: 250px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#navBar #boxNavExtras .boxNavExtra {
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+#navBar #boxNavExtras .boxNavExtra .btnFacebook {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  padding: 10px;
+  transition: 0.3s all;
+  text-align: center;
+  font-size: 12px;
+  text-decoration: none;
+}
+#navBar #boxNavExtras .boxNavExtra .btnFacebook:hover {
+  cursor: pointer;
+}
+#navBar #boxNavExtras .boxNavExtra .btnFacebook a {
+  text-decoration: none;
+  color: white;
+}
+#navBar #boxNavExtras .boxNavExtra img {
+  height: 70px;
+  padding: 15px;
+}
+
+#boxMobileBar {
+  background-color: #226622;
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 75px;
+  display: flex;
+  flex-direction: row;
+  z-index: 100;
+  padding-right: 60px;
+}
+#boxMobileBar .mobileBarItem {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#boxMobileBar .mobileBarItem img {
+  width: 100%;
+}
+
+#boxBurgerMenu #burgerButton {
+  width: 75px;
+  height: 75px;
+  position: fixed;
+  z-index: 500;
+  top: 0px;
+  right: 0px;
+  cursor: pointer;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#boxBurgerMenu #burgerButton span {
+  font-size: 2rem;
+  text-align: center;
+}
+#boxBurgerMenu #navPanel {
+  background-color: #E1643A;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 200;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#boxBurgerMenu #navPanel .navButton {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: white;
+  font-weight: 200;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#boxBurgerMenu #navPanel .navSign {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  background-color: #E1643A;
+  text-align: center;
+  margin: auto;
+  padding: 20px;
+}
+#boxBurgerMenu #navPanel .navSign img {
+  height: 100%;
+}
+#boxBurgerMenu #navPanel .navMobileFooter {
+  background-color: white;
+  border-radius: 10px;
+  margin: 5%;
+  position: absolute;
+  z-index: -1000;
+  bottom: 0;
+  left: 0;
+  width: 90%;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#boxBurgerMenu #navPanel .navMobileFooter .footerItem {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px;
+}
+#boxBurgerMenu #navPanel .navMobileFooter .footerItem .btnFacebook {
+  background-color: #4267b2;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 10px;
+  transition: 0.3s all;
+  text-align: center;
+}
+#boxBurgerMenu #navPanel .navMobileFooter .footerItem img {
+  width: 100%;
+}
+
+#boxLogo {
+  height: inherit;
+}
+
+#imgLogo {
+  height: inherit;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.navButton {
+  text-align: center;
+  padding: 5px;
+  font-family: roboto, sans-serif;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 0.3s all;
+  width: 110px;
+}
+
+#navBar > .navButton:hover {
+  /* font-weight: 800; */
+  background-color: ghostwhite;
+}
+
+.ml30 {
+  margin-left: 30px;
+}
+
+#banner-extras {
+  display: grid;
+  grid-template-columns: 10fr 1fr;
+  height: 50px;
+  position: relative;
+  z-index: 150;
+}
+@media screen and (max-width: 768px) {
+  #banner-extras {
+    font-size: 14px;
+  }
+}
+#banner-extras #banner-bon {
+  font-size: inherit;
+  height: inherit;
+  background-color: #E1643A;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#banner-extras #banner-bon span {
+  text-align: center;
+  color: white;
+  font-weight: 400;
+  font-size: inherit;
+}
+#banner-extras #banner-sticker-booking {
+  height: inherit;
+}
+#banner-extras #banner-sticker-booking img {
+  max-height: 100%;
+}
+#banner-extras #banner-sticker-explainer {
+  position: absolute;
+  right: 10px;
+  bottom: -20px;
+  font-size: 12px;
+  color: white;
+}
+
+@media screen and (max-width: 370px) {
+  #banner-extras {
+    grid-template-columns: unset;
+    grid-template-rows: 1fr 2fr 1fr;
+    height: unset;
+    max-height: 100px;
+  }
+
+  #banner-extras #banner-sticker-explainer {
+    position: relative;
+    right: unset;
+    bottom: unset;
+    text-align: center;
+    font-size: 10px;
+  }
+
+  #banner-extras #banner-sticker-booking {
+    height: auto;
+  }
+  #banner-extras #banner-sticker-booking img {
+    width: 100%;
+  }
+}
+.boxTitle {
+  font-family: roboto, sans-serif;
+  width: 100%;
+  font-weight: 200;
+  font-size: 30px;
+  color: white;
+  padding: 20px;
+  margin-bottom: 0px;
+}
+
+.boxText {
+  font-family: roboto, sans-serif;
+  line-height: 25px;
+  font-weight: 400;
+  font-size: 13px;
+  color: white;
+  width: 100%;
+  padding: 20px;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.boxBackgroundImage {
+  display: block;
+  position: absolute;
+  top: 75px;
+  right: 50px;
+  z-index: -400;
+  width: 300px;
+  opacity: 0.5;
+  /* background-color: red; */
+}
+
+.boxBackgroundImage > img {
+  width: 100%;
+}
+
+.boxFrontPageButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.btnFrontPage {
+  height: 50px;
+  font-family: roboto, sans-serif;
+  font-weight: 400;
+  color: white;
+  background-color: #E1643A;
+  width: 50%;
+  text-align: center;
+  border-radius: 25px;
+  margin-left: 5px;
+  margin-right: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 0.3s all;
+}
+.btnFrontPage span {
+  display: block;
+  font-size: 11px;
+}
+.btnFrontPage:hover {
+  box-shadow: 0 0 4px 1px white;
+  font-size: 14px;
+}
+
+#boxMain {
+  padding-top: 30px;
+  overflow-x: hidden;
+}
+#boxMain .boxCollapser {
+  margin: auto;
+  margin-top: 10px;
+  color: white;
+  line-height: 28px;
+  font-weight: 400;
+  font-size: 14px;
+}
+#boxMain .boxCollapser .collapserHeader {
+  text-align: center;
+  margin-bottom: 10px;
+  background-color: #1c531c;
+  width: 100px;
+  margin: auto;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s all;
+}
+#boxMain .boxCollapser .collapserHeader:hover {
+  box-shadow: 0px 0px 3px 1px white;
+}
+#boxMain .boxCollapser .collapserContent {
+  display: none;
+  margin-top: 10px;
+}
+#boxMain .boxCollapser .collapserContent p {
+  margin-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#boxMain .boxMainMap {
+  width: 1000px;
+  height: 500px;
+  padding-top: 0;
+}
+
+#boxBackground {
+  background-color: #226622;
+  position: fixed;
+  z-index: -150;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+#boxMap {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+}
+
+#boxFlatCards {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  justify-content: center;
+  margin-top: 5px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+.cardFlat {
+  cursor: pointer;
+  transition: 0.3s all;
+  width: 250px;
+  height: 390px;
+  background-color: #E1643A;
+  border-radius: 10px;
+  margin: 4px;
+  position: relative;
+}
+.cardFlat:hover {
+  background-color: #9d3918;
+}
+.cardFlat .boxFlatPhoto {
+  width: 250px;
+  height: 180px;
+  background-color: pink;
+  text-align: left;
+  overflow: hidden;
+  border-radius: 10px 10px 0px 0px;
+}
+.cardFlat .boxFlatPhoto img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+}
+.cardFlat .boxFlatInfo .boxFlatTitle {
+  font-weight: 400;
+  font-size: 16px;
+  width: 100%;
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.cardFlat .boxFlatInfo .boxFlatSubtitle {
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 100;
+}
+.cardFlat .boxFlatInfo .boxFlatDescription {
+  color: white;
+  height: 100px;
+  font-size: 11px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.cardFlat .boxFlatButtons {
+  text-align: center;
+  color: black;
+  font-size: 0.8rem;
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+}
+.cardFlat .boxFlatButtons .boxFlatButton {
+  height: 20px;
+  cursor: pointer;
+  background-color: white;
+  margin-left: 20%;
+  margin-right: 20%;
+  border-radius: 10px;
+  transition: 0.3s all;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.cardFlat .boxFlatButtons .boxFlatButton:hover {
+  box-shadow: 0 0 4px 1px black;
+}
+
+#boxModal {
+  background-color: #226622;
+  opacity: 1;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  overflow-y: scroll;
+  top: 0;
+  left: 0;
+  z-index: -100;
+  display: none;
+  transition: 0.3s all;
+}
+#boxModal .boxModalContent {
+  background-color: #1c531c;
+  position: relative;
+  border-radius: 20px;
+  padding-bottom: 10px;
+  padding-top: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+#boxModal .boxModalContent #boxModalTitle {
+  font-size: 20px;
+  color: white;
+  font-weight: 400;
+  width: 100%;
+  text-align: center;
+  padding-top: 5px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+#boxModal .boxModalContent #boxModalSubtitle {
+  font-size: 20px;
+  color: white;
+  font-weight: 200;
+  width: 100%;
+  text-align: center;
+  padding-top: 10px;
+}
+#boxModal .boxModalContent .boxStats {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+  color: white;
+}
+#boxModal .boxModalContent .boxStats .boxStat {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+#boxModal .boxModalContent .boxStats .boxStat .boxStatIcon {
+  width: 80%;
+  margin: auto;
+}
+#boxModal .boxModalContent .boxStats .boxStat .boxStatIcon img {
+  width: 100%;
+  height: 100%;
+}
+#boxModal .boxModalContent .boxStats .boxStat .boxStatTitle {
+  margin-top: 5px;
+  text-align: center;
+  font-size: 9px;
+}
+#boxModal .boxModalContent .boxStats .boxStat .boxStatValue {
+  text-align: center;
+  font-weight: 600;
+  font-size: 9px;
+}
+#boxModal .boxModalContent #boxModalDescription {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 15px;
+  margin: auto;
+  margin-top: 20px;
+  line-height: 20px;
+  font-size: 12px;
+  color: white;
+  font-weight: 400;
+}
+#boxModal .boxModalContent #boxModalImages {
+  width: 100%;
+  margin: auto;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#boxModal .boxModalContent #boxModalImages .boxModalImage {
+  margin: 2px;
+  width: 110px;
+  height: 75px;
+  overflow: hidden;
+  transition: 0.3s all;
+  text-align: center;
+}
+#boxModal .boxModalContent #boxModalImages .boxModalImage img {
+  width: 120%;
+}
+#boxModal .boxModalContent #boxModalImages .boxModalImage:hover {
+  box-shadow: 0px 0px 10px 1px white;
+  cursor: pointer;
+}
+#boxModal .boxModalContent #boxModalButtons {
+  position: relative;
+  margin: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#boxModal .boxModalContent #boxModalButtons .boxModalButton {
+  background-color: blueviolet;
+  line-height: 17px;
+  color: white;
+  cursor: pointer;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  margin: 2px;
+  padding: 5px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 9px;
+  position: relative;
+  margin-bottom: 10px;
+  transition: 0.3s all;
+}
+#boxModal .boxModalContent #boxModalButtons .boxModalButton:hover {
+  box-shadow: 0 0 4px 1px white;
+}
+#boxModal .boxModalContent #boxModalButtons .boxModalButton .boxRating {
+  position: absolute;
+  width: 100%;
+  top: 110%;
+  left: 0;
+  font-weight: 100;
+  pointer-events: none;
+}
+#boxModal .boxExitButton {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 25px;
+  height: 25px;
+}
+#boxModal .boxExitButton img {
+  width: 100%;
+  height: 100%;
+}
+
+#boxPhotoModal {
+  background-color: #154015;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -200;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#boxPhotoModal #boxPhotoModalImage {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#boxPhotoModal #boxPhotoModalImage #photoModalImage {
+  width: 99%;
+  border-radius: 5px;
+  margin: auto;
+}
+#boxPhotoModal .boxExitButton {
+  position: fixed;
+  z-index: 600;
+  top: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  background-color: #154015;
+  border-radius: 10px;
+  transition: 0.3s all;
+}
+#boxPhotoModal .boxExitButton img {
+  width: 100%;
+  height: 100%;
+}
+#boxPhotoModal .boxArrowButton {
+  position: fixed;
+  z-index: 600;
+  width: 50px;
+  height: 50px;
+  background-color: #154015;
+  top: 88%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+  transition: 0.3s all;
+}
+#boxPhotoModal .boxArrowButton img {
+  width: 100%;
+  height: 100%;
+}
+#boxPhotoModal .boxArrowButton.left {
+  left: 10px;
+}
+#boxPhotoModal .boxArrowButton.right {
+  right: 10px;
+}
+
+#mainContact {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#mainContact #boxContactDetails {
+  width: 90%;
+  margin-left: 5%;
+  color: white;
+  background-color: #E1643A;
+  padding: 10px;
+  border-radius: 10px;
+}
+#mainContact #boxContactDetails .boxContactDetail {
+  text-align: center;
+  margin: 10px;
+}
+#mainContact #boxContactDetails .boxContactDetail .boxContactIcon {
+  width: 40px;
+  height: 40px;
+  margin: auto;
+  margin-top: 20px;
+  padding: 5px;
+  transition: 0.3s all;
+}
+#mainContact #boxContactDetails .boxContactDetail .boxContactIcon:hover {
+  padding: 2px;
+}
+#mainContact #boxContactDetails .boxContactDetail .boxContactIcon img {
+  width: 100%;
+  height: 100%;
+}
+#mainContact #boxContactDetails .boxContactDetail a {
+  color: white;
+  font-weight: 100;
+}
+#mainContact #boxContactDetails .socialButton {
+  position: relative;
+  background-color: #4267b2;
+  border-radius: 10px;
+  width: 80%;
+  height: 40px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  transition: 0.3s all;
+  text-decoration: none;
+}
+#mainContact #boxContactDetails .socialButton:hover {
+  background-color: #4c77ce;
+}
+#mainContact #boxContactDetails .socialButton span {
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+}
+#mainContact #boxContactDetails .socialButton .boxSocialIcon {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  margin-right: 10px;
+}
+#mainContact #boxContactDetails .socialButton .boxSocialIcon img {
+  display: block;
+  margin: auto;
+  height: 100%;
+}
+
+#prev-overlay {
+  overflow: hidden !important;
+}
+
+#prev-modal {
+  background-color: transparent !important;
+  opacity: 1;
+  position: relative;
+  z-index: 5000 !important;
+  height: auto;
+  width: auto;
+  position: fixed !important;
+}
+
+/*# sourceMappingURL=main.css.map */

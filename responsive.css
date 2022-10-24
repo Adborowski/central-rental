@@ -1,0 +1,346 @@
+/*ONLY BREAKPOINTS BEYOND THIS POINT*/
+/*ONLY BREAKPOINTS BEYOND THIS POINT*/
+/*ONLY BREAKPOINTS BEYOND THIS POINT*/
+/*ONLY BREAKPOINTS BEYOND THIS POINT*/
+/*ONLY BREAKPOINTS BEYOND THIS POINT*/
+/*EXPERIMENTAL BREAKPOINT 0*/
+/*YOU ARE EDITING BREAKPOINTS, NOT GENERAL CSS*/
+@media (min-width: 350px) {
+  #boxModal .boxModalContent #boxModalImages .boxModalImage img {
+    width: 120%;
+  }
+
+  .boxTitle {
+    font-size: 42px;
+  }
+
+  .boxText {
+    line-height: 28px;
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  #boxModal .boxModalContent .boxStats .boxStat .boxStatTitle {
+    margin-top: 5px;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  #boxModal .boxModalContent .boxStats .boxStat .boxStatValue {
+    text-align: center;
+    font-weight: 600;
+    font-size: 12px;
+  }
+
+  #boxModal .boxModalContent #boxModalButtons .boxModalButton {
+    font-size: 12px;
+  }
+
+  #boxModal .boxModalContent #boxModalButtons {
+    margin-left: 5px;
+    margin-right: 5px;
+    width: auto;
+  }
+}
+/*SMALL 576px*/
+/*MEDIUM 767px*/
+@media (min-width: 767px) {
+  .boxTitle {
+    font-size: 75px;
+  }
+
+  .boxText {
+    line-height: 42px;
+    font-weight: 400;
+    font-size: 21px;
+  }
+
+  .btnFrontPage {
+    height: 80px;
+  }
+  .btnFrontPage span {
+    font-size: 16px;
+  }
+
+  #boxMain .boxCollapser .collapserContent p {
+    line-height: 42px;
+    font-weight: 400;
+    font-size: 21px;
+  }
+
+  #boxMain .boxCollapser .collapserContent {
+    margin-top: 30px;
+  }
+
+  .cardFlat {
+    width: 300px;
+    height: 500px;
+  }
+
+  .cardFlat .boxFlatPhoto {
+    width: 300px;
+    height: 220px;
+  }
+
+  .cardFlat .boxFlatPhoto img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .cardFlat .boxFlatInfo .boxFlatTitle {
+    font-size: 20px;
+  }
+
+  .cardFlat .boxFlatInfo .boxFlatSubtitle {
+    font-size: 20px;
+  }
+
+  .cardFlat .boxFlatInfo .boxFlatDescription {
+    font-size: 15px;
+    height: 130px;
+  }
+
+  .cardFlat .boxFlatButtons .boxFlatButton {
+    height: 25px;
+    border-radius: 15px;
+  }
+
+  #boxModal .boxModalContent .boxStats .boxStat .boxStatTitle {
+    font-size: 15px;
+  }
+
+  #boxModal .boxModalContent .boxStats .boxStat .boxStatValue {
+    font-size: 15px;
+  }
+
+  #boxModal .boxModalContent #boxModalButtons {
+    margin-bottom: 35px;
+  }
+
+  #boxModal .boxModalContent #boxModalButtons .boxModalButton {
+    height: 40px;
+    font-size: 15px;
+  }
+
+  .boxStatIcon {
+    padding: 10px;
+  }
+
+  #boxModal .boxModalContent {
+    margin-bottom: 10px;
+  }
+
+  #boxModal .boxModalContent #boxModalTitle {
+    font-size: 30px;
+  }
+
+  #boxModal .boxModalContent #boxModalSubtitle {
+    font-size: 30px;
+  }
+
+  #boxModal .boxModalContent #boxModalImages .boxModalImage {
+    width: 180px;
+    height: 130px;
+  }
+
+  #boxModal .boxModalContent #boxModalDescription {
+    line-height: 25px;
+    font-size: 15px;
+    width: 80%;
+    margin-top: 40px;
+  }
+
+  #mainContact #boxContactDetails {
+    font-size: 25px;
+  }
+
+  #boxMobileBar {
+    height: 90px;
+  }
+
+  #boxBurgerMenu #burgerButton {
+    width: 90px;
+    height: 90px;
+  }
+
+  #boxMobileBar .mobileBarItem {
+    padding: 0;
+    margin-left: 10px;
+  }
+
+  #boxBurgerMenu #navPanel .navSign img {
+    height: 55px;
+  }
+
+  #boxMain .boxMainMap {
+    padding-top: 0;
+  }
+
+  #boxMain.boxMainIndex {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  #boxPhotoModal #boxPhotoModalImage {
+    padding: 10px;
+  }
+
+  #boxPhotoModal .boxArrowButton, #boxPhotoModal .boxExitButton {
+    width: 80px;
+    height: 80px;
+  }
+
+  #boxPhotoModal .boxArrowButton.right {
+    right: 22.5px;
+    top: 49vh;
+  }
+
+  #boxPhotoModal .boxArrowButton.left {
+    left: 22.5px;
+    top: 49vh;
+  }
+
+  #boxPhotoModal .boxExitButton {
+    top: 22.5px;
+    right: 22.5px;
+  }
+}
+/*YOU ARE EDITING BREAKPOINTS, NOT GENERAL CSS*/
+/*LARGE 992px*/
+@media (min-width: 992px) {
+  .boxFrontPageButtons {
+    width: 80%;
+    margin: auto;
+  }
+  #boxMain.boxMainIndex {
+    height: 80vh;
+    margin-top: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  #boxMain.boxMainIndex > * {
+    padding: 0;
+    margin-bottom: 50px;
+  }
+
+  #boxMap {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    margin: auto;
+  }
+
+  #boxMobileBar, #boxBurgerMenu {
+    display: none;
+  }
+
+  #navBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  #navBar #boxNavExtras .boxNavExtra .btnFacebook {
+    height: 70px;
+    width: 70px;
+    text-align: center;
+    padding: 0px;
+  }
+
+  #navBar #boxNavExtras .boxNavExtra .btnFacebook img {
+    height: 70px;
+    width: 70px;
+    padding: 15px;
+  }
+
+  #boxLogo {
+    top: 0;
+    left: 0;
+  }
+
+  .navButton {
+    width: 120px;
+  }
+
+  .boxTitle {
+    width: 100%;
+    margin: auto;
+    font-size: 70px;
+  }
+
+  .boxText {
+    font-size: 20px;
+    width: 100%;
+    margin: auto;
+  }
+
+  .boxFrontPageButtons {
+    width: 100%;
+  }
+
+  .btnOffer {
+    width: 400px;
+  }
+
+  #boxModal .boxModalContent .boxStats {
+    width: 70%;
+  }
+
+  #boxModal .boxModalContent {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 15px;
+  }
+
+  #mainContact #boxContactDetails .socialButton {
+    width: 50%;
+  }
+}
+/*YOU ARE EDITING BREAKPOINTS, NOT GENERAL CSS*/
+/*EXTRA LARGE*/
+@media (min-width: 1200px) {
+  #boxMain {
+    height: auto;
+  }
+
+  #boxModal .boxModalContent .boxStats {
+    width: 50%;
+  }
+
+  #boxPhotoModal #boxPhotoModalImage {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  #photoModalImage {
+    margin: auto;
+  }
+
+  #boxMain .boxMainMap {
+    text-align: center;
+    width: 97vw;
+    background-color: pink;
+  }
+
+  #boxMap {
+    margin: 0;
+  }
+
+  #mainContact #boxContactDetails {
+    width: 50%;
+    margin-left: 25%;
+    font-size: 20px;
+  }
+  #mainContact #boxContactDetails a {
+    text-decoration: none;
+  }
+
+  .navButton {
+    width: 140px;
+  }
+}
+
+/*# sourceMappingURL=responsive.css.map */
