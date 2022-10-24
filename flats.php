@@ -19,7 +19,7 @@ if (!empty($_GET["flat_id"]))
 ?>
 
 
-<script defer src="js/flats.js"></script>
+<script defer src="js/flats.js?rand=6345"></script>
 
 <div id="boxBackground"></div>
 
