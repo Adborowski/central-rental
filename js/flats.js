@@ -38,10 +38,15 @@ function showFlatCards() {
             <div class="boxFlatInfo">
                 <div class="boxFlatTitle">${jFlat.flat_name}</div>
                 <div class="boxFlatSubtitle">${jFlat.address}</div>
-                <div class="boxFlatDescription"><div>${
-                  jFlat.description_short
-                }</div></div>
-                
+                <div class="stat">
+                <span>${jFlat.stats.flatType}</span>
+                </div>
+            </div>
+
+            <div class="boxFlatStats">
+                <div class="stat">${jFlat.stats.area} m2</div>
+                <div class="stat">Piętro: ${jFlat.stats.floor}</div>
+                <div class="stat">Osób: ${jFlat.stats.persons}</div>
             </div>
 
             <div class="boxFlatButtons">

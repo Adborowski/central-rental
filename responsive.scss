@@ -15,7 +15,7 @@
   // gotta preserve the whole SASS pyramid or you'll lose on specificity to main.css
   // am I a pharaoh now?
   // December 2020 - this was a terrible idea
-  // October 2020 - still a terrible idea
+  // October 2022 - still a terrible idea
 
   #boxModal {
     .boxModalContent {
@@ -100,7 +100,6 @@ $fontSizeDesktopMedium: 12px;
 
   .cardFlat {
     width: 300px;
-    height: 500px;
   }
 
   .cardFlat .boxFlatPhoto {

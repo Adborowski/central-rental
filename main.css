@@ -15,6 +15,7 @@ body {
   background: linear-gradient(rgba(0, 50, 0, 0.7), rgba(0, 50, 0, 0.9)), url("images/hero1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  padding-bottom: 64px;
   position: relative;
 }
 body ::-webkit-scrollbar {
@@ -440,7 +441,6 @@ body.noScroll {
   cursor: pointer;
   transition: 0.3s all;
   width: 250px;
-  height: 390px;
   background-color: #e1643a;
   border-radius: 10px;
   margin: 4px;
@@ -470,7 +470,6 @@ body.noScroll {
   color: white;
   text-align: center;
   margin-top: 10px;
-  margin-bottom: 10px;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -490,13 +489,25 @@ body.noScroll {
   flex-direction: column;
   justify-content: center;
 }
+.cardFlat .boxFlatInfo .stat {
+  color: white;
+  text-align: center;
+  margin-left: 12px;
+  margin-right: 12px;
+  font-size: 16px;
+  margin-top: 3px;
+}
+.cardFlat .boxFlatInfo .stat span {
+  display: block;
+  width: 100%;
+}
 .cardFlat .boxFlatButtons {
   text-align: center;
   color: black;
   font-size: 0.8rem;
-  position: absolute;
-  bottom: 15px;
   width: 100%;
+  margin-top: 18px;
+  margin-bottom: 18px;
 }
 .cardFlat .boxFlatButtons .boxFlatButton {
   height: 20px;
@@ -850,6 +861,23 @@ body.noScroll {
   display: block;
   text-align: center;
   width: 100%;
+}
+
+.boxFlatStats {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  grid-gap: 3px;
+  margin: 12px 12px;
+}
+.boxFlatStats .stat {
+  border-radius: 6px;
+  padding: 6px;
+  background-color: white;
+  color: black;
+}
+.boxFlatStats .stat.long {
+  font-size: 12px;
 }
 
 /*# sourceMappingURL=main.css.map */
