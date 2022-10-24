@@ -185,7 +185,8 @@
     padding: 10px;
   }
 
-  #boxPhotoModal .boxArrowButton, #boxPhotoModal .boxExitButton {
+  #boxPhotoModal .boxArrowButton,
+#boxPhotoModal .boxExitButton {
     width: 80px;
     height: 80px;
   }
@@ -213,10 +214,9 @@
     margin: auto;
   }
   #boxMain.boxMainIndex {
-    height: 80vh;
+    max-width: 800px;
+    margin: auto;
     margin-top: 50px;
-    margin-left: 10%;
-    margin-right: 10%;
   }
 
   #boxMain.boxMainIndex > * {
@@ -231,7 +231,8 @@
     margin: auto;
   }
 
-  #boxMobileBar, #boxBurgerMenu {
+  #boxMobileBar,
+#boxBurgerMenu {
     display: none;
   }
 
