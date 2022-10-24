@@ -441,13 +441,14 @@ body.noScroll {
   cursor: pointer;
   transition: 0.3s all;
   width: 250px;
-  background-color: #e1643a;
+  background-color: white;
+  color: black;
   border-radius: 10px;
   margin: 4px;
   position: relative;
 }
 .cardFlat:hover {
-  background-color: #9d3918;
+  background-color: lightgray;
 }
 .cardFlat .boxFlatPhoto {
   width: 250px;
@@ -465,36 +466,25 @@ body.noScroll {
 }
 .cardFlat .boxFlatInfo .boxFlatTitle {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 20px;
   width: 100%;
-  color: white;
+  color: black;
   text-align: center;
   margin-top: 10px;
   padding-left: 10px;
   padding-right: 10px;
 }
 .cardFlat .boxFlatInfo .boxFlatSubtitle {
-  color: white;
-  font-size: 16px;
+  font-size: 14px;
   text-align: center;
-  font-weight: 100;
-}
-.cardFlat .boxFlatInfo .boxFlatDescription {
-  color: white;
-  height: 100px;
-  font-size: 11px;
-  padding-left: 15px;
-  padding-right: 15px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  font-weight: 400;
 }
 .cardFlat .boxFlatInfo .stat {
-  color: white;
   text-align: center;
+  font-weight: 100;
   margin-left: 12px;
   margin-right: 12px;
-  font-size: 16px;
+  font-size: 14px;
   margin-top: 3px;
 }
 .cardFlat .boxFlatInfo .stat span {
@@ -510,16 +500,18 @@ body.noScroll {
   margin-bottom: 18px;
 }
 .cardFlat .boxFlatButtons .boxFlatButton {
-  height: 20px;
+  height: 40px;
   cursor: pointer;
-  background-color: white;
-  margin-left: 20%;
-  margin-right: 20%;
-  border-radius: 10px;
+  background-color: #e1643a;
+  color: white;
+  border-radius: 40px;
   transition: 0.3s all;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  max-width: 200px;
+  margin: auto;
+  font-size: 16px;
 }
 .cardFlat .boxFlatButtons .boxFlatButton:hover {
   box-shadow: 0 0 4px 1px black;
@@ -873,11 +865,8 @@ body.noScroll {
 .boxFlatStats .stat {
   border-radius: 6px;
   padding: 6px;
-  background-color: white;
-  color: black;
-}
-.boxFlatStats .stat.long {
-  font-size: 12px;
+  background-color: #226622;
+  color: white;
 }
 
 /*# sourceMappingURL=main.css.map */

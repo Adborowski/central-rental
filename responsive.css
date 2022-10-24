@@ -86,22 +86,9 @@
     height: 100%;
   }
 
-  .cardFlat .boxFlatInfo .boxFlatTitle {
-    font-size: 20px;
-  }
-
-  .cardFlat .boxFlatInfo .boxFlatSubtitle {
-    font-size: 20px;
-  }
-
   .cardFlat .boxFlatInfo .boxFlatDescription {
     font-size: 15px;
     height: 130px;
-  }
-
-  .cardFlat .boxFlatButtons .boxFlatButton {
-    height: 25px;
-    border-radius: 15px;
   }
 
   #boxModal .boxModalContent .boxStats .boxStat .boxStatTitle {
