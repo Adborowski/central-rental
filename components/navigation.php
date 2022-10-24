@@ -57,7 +57,7 @@
         <div class="navButton" data-target="flats">Mieszkania</div>
         <div class="navButton" data-target="map">Mapa</div>
         <a class="navButton" href="contact.php">Kontakt</a>
-        <a class="navButton" href="https://drive.google.com/file/d/1D-dc3Kq3w0CCkkEddhDkb4F7Q9RUgGol/view?usp=sharing">Regulamin</a>
+        <a class="navButton" target="_blank" href="https://drive.google.com/file/d/1D-dc3Kq3w0CCkkEddhDkb4F7Q9RUgGol/view?usp=sharing">Regulamin</a>
         <div class="navButton" data-target="privacy">Prywatność</div>
         <div class="navButton" data-target="rezerwacje">Rezerwacje</div>
 
