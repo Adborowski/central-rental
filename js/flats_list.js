@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded",function(event){iai_booking_button(
 var jFlats = [
   {
     flat_id: 1,
+    removed: true,
     object_code: 13,
     flat_name: 'Apartament "Bluesa"',
     address: "Rynek Kościuszki 15B/25",
@@ -69,6 +70,7 @@ var jFlats = [
   //53.137552, 23.147629
   {
     flat_id: 3,
+    removed: true,
     flat_name: 'Apartament "Komfortowy"',
     object_code: 15,
     number_of_photos: 45,
@@ -95,6 +97,7 @@ var jFlats = [
 
   {
     flat_id: 4,
+    removed: true,
     flat_name: 'Apartament "Przytulny"',
     object_code: 20,
     number_of_photos: 66,
@@ -225,6 +228,7 @@ var jFlats = [
   },
   {
     flat_id: 9,
+    removed: true,
     flat_name: 'Apartament "Centrum"',
     object_code: 18,
     number_of_photos: 39,
@@ -251,6 +255,7 @@ var jFlats = [
   },
   {
     flat_id: 10,
+    removed: true,
     flat_name: 'Apartament "Śródmieście"',
     object_code: 17,
     number_of_photos: 50,
@@ -277,6 +282,7 @@ var jFlats = [
   },
   {
     flat_id: 11,
+    removed: true,
     flat_name: 'Apartament "Rodzinny"',
     object_code: 11,
     number_of_photos: 44,
@@ -329,6 +335,7 @@ var jFlats = [
 
   {
     flat_id: 13,
+    removed: true,
     flat_name: "Apartament Broniewskiego 15",
     object_code: 25,
     number_of_photos: 40,

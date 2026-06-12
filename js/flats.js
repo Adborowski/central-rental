@@ -11,8 +11,7 @@ $(".modalTrigger").on("click", function (e) {
 });
 
 $(".modalKiller").on("click", function (e) {
-  // killModal();
-  window.location.href = "http://www.centralrental.pl/flats.php";
+  window.location.href = "/flats.php";
 });
 
 $(".photoModalKiller").on("click", function (e) {
@@ -24,12 +23,13 @@ function showFlatCards() {
 
   $("#boxFlatCards").html(""); // clear the #boxFlatCards first
 
-  $.each(jFlats, function (index, jFlat) {
+  $.each(jFlats, function (_index, jFlat) {
+    if (jFlat.removed) return;
     console.log(jFlat);
 
     $("#boxFlatCards").append(
       `
-            <div class="cardFlat" data-flat-id="${index + 1}">
+            <div class="cardFlat" data-flat-id="${jFlat.flat_id}">
 
             <div class="boxFlatPhoto">
                 <img src="images/f${jFlat.flat_id}/mini/1.jpg">
@@ -54,7 +54,7 @@ function showFlatCards() {
             </div>
 
         </div> <!-- end of .cardFlat -->
-            `
+            `,
     );
   }); // end of $.each
 
@@ -127,7 +127,7 @@ function openModal(flatId) {
 
       if (jFlat.stats.rating_booking) {
         $("#rating-booking").html(
-          "Ocena: " + jFlat.stats.rating_booking + "/10"
+          "Ocena: " + jFlat.stats.rating_booking + "/10",
         );
       }
 
@@ -139,7 +139,7 @@ function openModal(flatId) {
           jFlat.object_code +
           ` class="i_do_sell_booking_widget_start boxModalButton" onclick="generateWidgetIdoSellBooking(this)">
                 <span>Rezerwuj teraz / Book now / Бронируй теперь</span>
-            </div>`
+            </div>`,
       );
 
       $(".boxModalButton").on("click", function () {
@@ -180,14 +180,14 @@ function openPhotoModal(flatId, photoId) {
 
   calculateModalHeight();
   console.log(
-    "Opening photo modal for flat id: " + flatId + " and photo id: " + photoId
+    "Opening photo modal for flat id: " + flatId + " and photo id: " + photoId,
   );
   boxPhotoModal.css("z-index", 600).css("display", "block");
 
   $("#boxPhotoModalImage").html(
     `
         <img id="photoModalImage" src="images/f${flatId}/${photoId}.jpg" data-flat-id="${flatId}" data-photo-id="${photoId}">
-        `
+        `,
   );
 
   // the photoModal should only adjust after a certain window width
@@ -203,14 +203,14 @@ $(".boxArrowButton").on("click", function () {
       .parent()
       .find("#boxPhotoModalImage")
       .find("img")
-      .attr("data-flat-id")
+      .attr("data-flat-id"),
   );
   var photoId = parseInt(
     $(this)
       .parent()
       .find("#boxPhotoModalImage")
       .find("img")
-      .attr("data-photo-id")
+      .attr("data-photo-id"),
   );
 
   if (photoId <= 1 && changeValue == -1) {
@@ -245,7 +245,7 @@ function adjustToPhotoOrientation() {
       "Orientation: Landscape, Image Size: " +
         photoModalImageWidth +
         " x " +
-        photoModalImageHeight
+        photoModalImageHeight,
     );
 
     // $("#photoModalImage").css("border", "5px solid red");
@@ -262,7 +262,7 @@ function adjustToPhotoOrientation() {
       "Orientation: Portrait, Image Size: " +
         photoModalImageWidth +
         " x " +
-        photoModalImageHeight
+        photoModalImageHeight,
     );
     // $("#photoModalImage").css("border", "5px solid blue");
     // $("#photoModalImage").css("width", "auto");
@@ -298,7 +298,8 @@ var autoModalController = location.search.split("showFlat=")[1];
 // hide the GET request
 if (autoModalController) {
   console.log(
-    "Found autoModalController, opening modal with flat: " + autoModalController
+    "Found autoModalController, opening modal with flat: " +
+      autoModalController,
   );
   openModal(autoModalController);
 

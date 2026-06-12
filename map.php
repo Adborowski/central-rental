@@ -21,7 +21,7 @@ include "components/navigation.php";
 
 </div>
 
-<script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDbn17B9FO0UXQDZaWCSKwwc7FoGwRQqpc&callback=initMap" type="text/javascript"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
 <?php
 include "components/bottom.php";

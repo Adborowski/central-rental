@@ -1,61 +1,41 @@
 console.log("[map.js]");
 
-var bialystok = {lat: 53.133, lng: 23.155};
-// used in mapOptions
-// to move the viewpoint north, decrease lat
-
-var mapOptions = {
-  center: bialystok,
-  zoom: 14
-}
+var bialystok = [53.133, 23.155];
 
 function initMap() {
+  var map = L.map('map').setView(bialystok, 14);
 
-    var image = {
-      url: 'images/map_icon_mini.png',
-      size: new google.maps.Size(50, 50),
-      scaledSize: new google.maps.Size(50, 50)
-    }; // end of var image
-  
-    var map = new google.maps.Map(document.getElementById("map"), mapOptions);
-    var markersArray = [];
-  
-    $.each(jFlats, function(index, jFlat) {
-      console.log(jFlat.coordinates);
-    
-      var marker = new google.maps.Marker({
-        position: jFlat.coordinates,
-        map: map,
-        title: 'Hello World!',
-        icon: image,
-      }); // end of var marker
-    
-      var infowindow = new google.maps.InfoWindow({
-        content: jFlat.flat_name+"<br><br><b>"+jFlat.address+"</b><br><br>"+" "
-        +jFlat.description_short+"<br><br>"
-        +"<a href='#' onclick='showFlat("+jFlat.flat_id+")' flat-id="+jFlat.flat_id+">Więcej</a>",
-      }); // end of var infowindow
-  
-      marker.addListener('click', function() {
-  
-        infowindow.open(map, marker);
-  
-      }); // end of marker.addListener
-  
-    }); // end of $.each
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+  }).addTo(map);
 
-}; // end of initMap
+  var icon = L.icon({
+    iconUrl: 'images/map_icon_mini.png',
+    iconSize: [50, 50],
+    iconAnchor: [25, 50],
+    popupAnchor: [0, -50],
+  });
 
-function showFlat(flat_id){
-  console.log("showing flat: "+flat_id);
-  document.location.href = 'flats.php?showFlat='+flat_id;
+  $.each(jFlats, function(index, jFlat) {
+    if (jFlat.removed) return;
+
+    var marker = L.marker([jFlat.coordinates.lat, jFlat.coordinates.lng], { icon: icon }).addTo(map);
+
+    marker.bindPopup(
+      "<b>" + jFlat.flat_name + "</b><br>" +
+      jFlat.address + "<br><br>" +
+      jFlat.description_short + "<br><br>" +
+      "<a href='flats.php?showFlat=" + jFlat.flat_id + "'>Więcej</a>"
+    );
+  });
 }
 
+function showFlat(flat_id) {
+  document.location.href = 'flats.php?showFlat=' + flat_id;
+}
 
-
-
-
-
-
-   
-
+document.addEventListener('DOMContentLoaded', function() {
+  if (document.getElementById('map') && typeof L !== 'undefined') {
+    initMap();
+  }
+});
