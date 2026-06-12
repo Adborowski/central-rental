@@ -31,8 +31,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <title>Central Rental</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://use.typekit.net/wnf2eqa.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css"/>
-    <link rel="stylesheet" type="text/css" media="screen" href="responsive.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css?v=<?php echo filemtime('main.css'); ?>"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="responsive.css?v=<?php echo filemtime('responsive.css'); ?>"/>
     <link rel="shortcut icon" href="images/favicon.png"/>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
 
@@ -43,9 +43,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </script>
 
 
-    <script defer src="js/main.js"></script>
-    <script src="js/flats_list.js"></script>
-    <script src="js/map.js"></script>
+    <script defer src="js/main.js?v=<?php echo filemtime('js/main.js'); ?>"></script>
+    <script src="js/flats_list.js?v=<?php echo filemtime('js/flats_list.js'); ?>"></script>
+    <script src="js/map.js?v=<?php echo filemtime('js/map.js'); ?>"></script>
     <!-- <script src="http://widgetredirect.rooms-wizard.com/static/scripts/widget.js"></script> -->
 
  <!-- Global site tag (gtag.js) - Google Ads: 745944823 --> <script async src="https://www.googletagmanager.com/gtag/js?id=AW-745944823"></script> 
