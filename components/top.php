@@ -45,9 +45,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <script defer src="js/main.js"></script>
     <script src="js/flats_list.js"></script>
     <script src="js/map.js"></script>
-    <script src="http://widgetredirect.rooms-wizard.com/static/scripts/widget.js"></script>
+    <!-- <script src="http://widgetredirect.rooms-wizard.com/static/scripts/widget.js"></script> -->
 
- <!-- Global site tag (gtag.js) - Google Ads: 745944823 --> <script async src="https://www.googletagmanager.com/gtag/js?id=AW-745944823"></script> 
+ <!-- Global site tag (gtag.js) - Google Ads: 745944823 --> 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-745944823"></script> 
  
  <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-745944823'); </script>
 
